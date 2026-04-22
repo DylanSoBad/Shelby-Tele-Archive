@@ -4,7 +4,7 @@ from config import Config
 # Khởi tạo client mới với genai
 client = genai.Client(api_key=Config.GEMINI_API_KEY)
 
-# Sử dụng mô hình mới nhất
+
 MODEL_NAME = 'gemini-2.5-flash'
 
 def summarize_text(text: str) -> str:
