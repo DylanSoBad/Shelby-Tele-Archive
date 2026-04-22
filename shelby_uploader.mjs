@@ -38,7 +38,7 @@ async function main() {
             privateKey: new Ed25519PrivateKey(SHELBY_ACCOUNT_PRIVATE_KEY),
         });
 
-        // Setup standard 1 month duration
+
         const duration = 30 * 24 * 60 * 60 * 1000000;
         const expirationMicros = Date.now() * 1000 + duration;
 
