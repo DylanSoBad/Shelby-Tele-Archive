@@ -6,7 +6,7 @@ import os
 import gemini_client
 import shelby_client
 
-# Basic logging configuration
+
 logger = logging.getLogger(__name__)
 
 async def start_handler(update: Update, context: ContextTypes.DEFAULT_TYPE):
@@ -198,7 +198,7 @@ async def list_handler(update: Update, context: ContextTypes.DEFAULT_TYPE):
         await status_msg.edit_text("🗂 Your storage vault is currently empty!")
         return
         
-    # Get top 15 blobs
+
     top_blobs = blobs[:15]
     
     lines = ["🗂 Vault Documents:\n"]
